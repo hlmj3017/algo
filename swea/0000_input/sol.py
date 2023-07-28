@@ -25,7 +25,7 @@ for i in range(TC):
 # for number in numbers:
 #     int_num = int(number)
 
-#     if int_Num % 2 == 1:
+#     if int_num % 2 == 1:
 #         print(f'{int_num}은 홀수입니다.')
  
 numbers = list(map(int, input().split()))
@@ -48,4 +48,4 @@ print(matrix)
 for row in matrix:
     for item in row:
         if item == 10:
-            print('')
+            print('5가 있습니다.')
