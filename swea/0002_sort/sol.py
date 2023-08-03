@@ -13,7 +13,7 @@
 #             my_list[j], my_list[j+1] = my_list[j+1], my_list[j]
        
 #        # temp = my_list[j]
-#        # my_list[j] - my_list[j+!]
+#        # my_list[j] - my_list[j+1]
 #        # my_list[j+1] = temp
 # print(my_list)
 
