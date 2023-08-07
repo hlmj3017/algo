@@ -48,7 +48,7 @@ for tc in range(1, T+1):
         while now < N:
             # 현재 위치(now)에서 최대로 갈 수 있는 범위를 찾는다.
             # 최대로 갈 수 있는 범위(now+k)부터 현재 위치까지 반복
-            for i in range(now + k, now, -1):
+            for i in range(now + K, now, -1):
                 # 1. 최대범위가 종점을 넘는 경우
                 if i >= N:
                     now = N
@@ -68,5 +68,5 @@ for tc in range(1, T+1):
             # 현재 위치에서 최대 거리를 찾았는데, 충전소가 없다면 => 도착 불가능
             else:
                 count = 0
-                now = k  # while문을 끝내는 조건을 만들어주는 것
+                now = K  # while문을 끝내는 조건을 만들어주는 것
 
