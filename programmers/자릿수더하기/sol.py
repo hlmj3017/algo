@@ -8,15 +8,18 @@ def solution(n):
         answer += b
     return answer
 
- print(solution(1234))  
+print(solution(1234))  
+print(solution(930211))  
 
 
-# def solution(n):
-#     answer=0
+# 다른 방법 1
+def solution(n):
+    answer=0
 
-#     for i in str(n):
-#         answer += int(i)
+    for i in str(n):
+        answer += int(i)
 
-#     return answer
+    return answer
 
-#  print(solution(1234))   
+print(solution(1234)) 
+print(solution(930211))    
