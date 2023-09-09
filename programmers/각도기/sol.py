@@ -8,11 +8,15 @@ def solution(angle):
     else:
         return 4
 
+print(solution(70))       
+print(solution(90)) 
+print(solution(150)) 
 
-# def solution(angle):
-#     answer = (angle // 90) * 2 + (angle % 90 > 0) * 1
-#     return answer
 
+# 다른 방법 1
+def solution(angle):
+    answer = (angle // 90) * 2 + (angle % 90 > 0) * 1
+    return answer
 
 print(solution(70))       
 print(solution(90)) 
