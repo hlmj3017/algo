@@ -1,4 +1,12 @@
 def solution(my_string, letter):
+    return my_string.replace(letter, '')
+    
+print(solution("abcdef", "f"))  
+print(solution("BCBdbe", "B"))
+
+
+# 다른 방법 1
+def solution(my_string, letter):
     answer = ''
     
     for string in my_string:
@@ -6,10 +14,5 @@ def solution(my_string, letter):
             answer += string
     return answer
 
-
-def solution(my_string, letter):
-    answer = ''
-    
-    my_string.replace(letter, '')
-    
-    return answer
+print(solution("abcdef", "f"))  
+print(solution("BCBdbe", "B")) 
