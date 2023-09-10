@@ -26,6 +26,7 @@ def mul(l):
     for i in l:
         r *= i
     return r
+    
 def solution(num_list):
     return sum(num_list) if len(num_list) >= 11 else mul(num_list)
 
