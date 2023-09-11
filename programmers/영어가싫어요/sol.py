@@ -25,9 +25,9 @@ print(solution("onefourzerosixseven"))
     # return numbers
 
 # 다른 방법 1
-    for i in nums.keys():
-        numbers = numbers.replace(i, nums[i])  # 딕셔너리 메소드
-    return int(numbers)
+#     for i in nums.keys():
+#         numbers = numbers.replace(i, nums[i])  # 딕셔너리 메소드
+#     return int(numbers)
 
-print(solution("onetwothreefourfivesixseveneightnine"))
-print(solution("onefourzerosixseven"))
+# print(solution("onetwothreefourfivesixseveneightnine"))
+# print(solution("onefourzerosixseven"))
