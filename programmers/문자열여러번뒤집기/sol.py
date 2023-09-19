@@ -15,3 +15,6 @@ def solution(my_string, queries):
     return ''.join(answer)
 
 print(solution("rermgorpsam",[[2, 3], [0, 7], [5, 9], [6, 10]]))
+
+
+# replace 방법도!! 풀어보자
