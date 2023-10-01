@@ -29,3 +29,28 @@ def solution(keymap, targets):
 print(solution(["ABACD", "BCEFD"],["ABCD","AABB"]))
 print(solution(["AA"],["B"]))
 print(solution(["AGZ", "BSSS"],["ASA","BGZ"]))
+
+
+
+def solution(keymap, targets):
+    answer = []
+    
+    for i in targets:
+        temp = 0
+        for j in i:
+            min_idx = 101
+            for n in keymap:
+                try:
+                    if n.index(j) < min_idx:
+                        min_idx = n.index(j)
+                except:
+                    continue
+            if min_idx == 101: 
+                answer.append(-1)
+                break
+            else:
+                temp += min_idx + 1  
+        else:
+            answer.append(temp)
+    
+    return answer
