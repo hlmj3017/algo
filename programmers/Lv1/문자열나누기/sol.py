@@ -26,6 +26,8 @@ def solution(s):
     result = []  # 분해한 문자열을 저장할 리스트
     while s:
         segment, s = split_string(s)  # 문자열 분해
+        # segment는 현재 분해된 부분 문자열
+        # s는 남은 문자열
         result.append(segment)  # 분해한 문자열을 결과 리스트에 추가
 
     return len(result)  # 분해한 문자열의 개수 반환
