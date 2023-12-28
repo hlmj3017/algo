@@ -1,0 +1,25 @@
+-- 코드를 입력하세요
+-- CASE 1 : GROUP BY + IN절
+SELECT *
+FROM PLACES
+WHERE HOST_ID IN (
+SELECT HOST_ID
+FROM PLACES
+GROUP BY HOST_ID
+HAVING COUNT(ID) >= 2
+    )
+ORDER BY ID;
+
+-- 다른 풀이
+-- CASE 2 : GROUP BY + EXISTS
+SELECT * FROM PLACES P1
+WHERE EXISTS (
+    SELECT 1 FROM PLACES P2
+    WHERE P1.HOST_ID = P2.HOST_ID
+    GROUP BY HOST_ID
+    HAVING COUNT(ID) >= 2
+)
+ORDER BY ID ASC;
+
+-- 헤비 유저에 해당하는 유저들을 찾은 뒤(해당 HOST_ID를 서브 쿼리로 찾음),
+-- 찾아온 헤비 유저의 HOST_ID를 바탕으로 PLACES 테이블에서 일치하는 ROW들을 아이디 순으로 정렬하면 되겠습니다.
