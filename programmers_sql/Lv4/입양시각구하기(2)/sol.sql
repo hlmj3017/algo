@@ -1,4 +1,5 @@
 -- 코드를 입력하세요
+--  "ANIMAL_ID" 열의 값 중에서 NULL이 아닌 행의 수를 세되, 만약 결과가 NULL이면 0으로 대체하여 "COUNT"라는 이름의 열로 반환
 SELECT
     A.HOUR AS HOUR,
     COALESCE(COUNT(ANIMAL_ID), 0) AS COUNT
